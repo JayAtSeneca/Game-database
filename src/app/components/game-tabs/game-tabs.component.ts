@@ -6,9 +6,12 @@ import { Game } from 'src/app/models';
   templateUrl: './game-tabs.component.html',
   styleUrls: ['./game-tabs.component.scss']
 })
-export class GameTabsComponent {
-  @Input()game:Game;
-  constructor(){ }
-  ngOnInit(): void{
+export class GameTabsComponent implements OnInit {
+  @Input() game: Game;
+  
+  constructor() { }
+
+  ngOnInit(): void {
   }
+
 }
